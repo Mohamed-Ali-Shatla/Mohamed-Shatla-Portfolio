@@ -74,6 +74,25 @@
   .contact-row a{color:var(--text);}
   .contact-row span.sep{color:var(--panel-border);}
 
+  .cover-inner{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap-reverse;
+  }
+  .cover-text{flex:1;min-width:280px;}
+  .avatar{
+    width:132px;
+    height:132px;
+    border-radius:50%;
+    object-fit:cover;
+    border:1px solid var(--panel-border);
+    outline:2px solid var(--accent);
+    outline-offset:5px;
+    flex-shrink:0;
+  }
+
   /* ---------- Sections ---------- */
   section{padding:56px 0;border-bottom:1px solid var(--panel-border);}
   section:last-of-type{border-bottom:none;}
@@ -163,18 +182,23 @@
 
 <header class="cover">
   <div class="wrap">
-    <p class="kicker">Portfolio — Data Science &amp; Machine Learning</p>
-    <h1 class="name">Mohamed Ali Ali Shatla</h1>
-    <p class="role">Data Scientist</p>
-    <p class="usp">I help teams turn messy, real-world data into decisions they can act on — through careful cleaning, honest exploration, and models built to be understood, not just accurate.</p>
-    <div class="contact-row">
-      <span>Tanta, Gharbia — Egypt</span>
-      <span class="sep">/</span>
-      <a href="tel:+201028684011">01028684011</a>
-      <span class="sep">/</span>
-      <a href="mailto:mohamedalishatla71@gmail.com">mohamedalishatla71@gmail.com</a>
-      <span class="sep">/</span>
-      <a href="https://www.linkedin.com/in/mohamed-ali-shatla-88734b362/" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="cover-inner">
+      <div class="cover-text">
+        <p class="kicker">Portfolio — Data Science &amp; Machine Learning</p>
+        <h1 class="name">Mohamed Ali Ali Shatla</h1>
+        <p class="role">Data Scientist</p>
+        <p class="usp">I help teams turn messy, real-world data into decisions they can act on — through careful cleaning, honest exploration, and models built to be understood, not just accurate.</p>
+        <div class="contact-row">
+          <span>Tanta, Gharbia — Egypt</span>
+          <span class="sep">/</span>
+          <a href="tel:+201028684011">01028684011</a>
+          <span class="sep">/</span>
+          <a href="mailto:mohamedalishatla71@gmail.com">mohamedalishatla71@gmail.com</a>
+          <span class="sep">/</span>
+          <a href="https://www.linkedin.com/in/mohamed-ali-shatla-88734b362/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <img class="avatar" src="profile.png" alt="Mohamed Ali Ali Shatla">
     </div>
   </div>
 </header>
